@@ -1,0 +1,7 @@
+plt.imshow(np.rot90(np.asarray(puntajes_3L_NN_matriz).T,1),cmap=plt.cm.hot,
+           extent=[n_n_min,n_n_max_2-3,n_n_min,n_n_max_2-3])
+plt.colorbar()
+plt.xlabel('Neuronas en la segunda capa escondida')
+plt.ylabel('Neuronas en la primera capa escondida')
+plt.savefig('test_3L_matriz.pdf')
+plt.close()
